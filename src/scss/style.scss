@@ -1,0 +1,24 @@
+@import './vars';
+@import './fonts';
+@import './politicy';
+
+// глобальные стили
+@import './globals';
+
+// layout
+@import './layout/header';
+@import './layout/footer';
+
+// секции
+@import './sections/home';
+@import './sections/about';
+@import './sections/solutions';
+@import './sections/team-experience';
+@import './sections/key-skills';
+@import './sections/completed-projects';
+@import './sections/contact';
+
+// компоненты
+@import './components/button';
+@import './components/swiper-anim';
+@import './components/popup';

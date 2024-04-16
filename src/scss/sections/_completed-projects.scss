@@ -1,0 +1,77 @@
+.completed-projects {
+	padding: 100px 0;
+
+	@media (max-width: 400px) {
+		padding: 75px 0 75px 0;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		opacity: 0;
+
+		&.animate {
+			opacity: 1;
+			transition: opacity 0.4s ease-in-out;
+			transition-delay: 0.2s;
+		}
+	}
+
+	.project {
+		padding: 20px;
+		width: 300px;
+		border-radius: 10px;
+		border: var(--cardBorder);
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+			border-color 0.2s ease-in-out;
+
+		&.hidden {
+			display: none;
+		}
+
+		@media (min-width: 768px) {
+			&:hover {
+				color: var(--primaryColor);
+				background-color: var(--secondaryColor);
+				border-color: var(--primaryColor);
+			}
+		}
+
+		p {
+			margin-bottom: 5px;
+			font-size: calc(15px + 3 * (100vw - 320px) / 1120);
+		}
+
+		ul {
+			margin-left: 35px;
+		}
+
+		ul li {
+			list-style-type: disc;
+		}
+	}
+
+	.buttonBody {
+		display: flex;
+		justify-content: center;
+	}
+
+	.button {
+		margin-top: 40px;
+		opacity: 0;
+
+		&.animate {
+			opacity: 1;
+			transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+			transform: translateY(-15px);
+			transition-delay: 0.2s;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.button {
+	padding: 15px 20px;
+	border: var(--cardBorder);
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+		border-color 0.2s ease-in-out;
+
+	@media (min-width: 768px) {
+		&:hover {
+			color: var(--primaryColor);
+			background-color: var(--secondaryColor);
+			border-color: var(--primaryColor);
+		}
+	}
+}
