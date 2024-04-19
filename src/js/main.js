@@ -1,22 +1,22 @@
 import '../scss/style.scss'
-import { Animate } from './modules/animate'
-import { Form } from './modules/form'
-import { Menu } from './modules/menu'
-import { particlesJs } from './modules/particlesJs'
-import { ClosePopup } from './modules/popup'
-import { ShowMore } from './modules/showMore'
-import { SmoothScroll } from './modules/smoothScroll'
-import { SwiperInitialization } from './modules/swiperInitialization'
-import { SwitchingTheme } from './modules/switchingTheme'
+import { animateInit } from './modules/animate'
+import { contactFormInit } from './modules/form'
+import { menuInit } from './modules/menu'
+import { particlesJsInit } from './modules/particles-js-config'
+import { popupInit } from './modules/popup'
+import { showMoreInit } from './modules/show-more'
+import { smoothScrollInit } from './modules/smooth-scroll'
+import { swiperInit } from './modules/swiper'
+import { switchThemeInit } from './modules/switching-theme'
 
 document.addEventListener('DOMContentLoaded', () => {
-	SwiperInitialization()
-	SwitchingTheme()
-	SmoothScroll()
-	Animate()
-	Menu()
-	ShowMore()
-	Form()
-	ClosePopup()
-	particlesJs()
+	menuInit()
+	animateInit()
+	contactFormInit()
+	swiperInit()
+	switchThemeInit()
+	smoothScrollInit()
+	showMoreInit()
+	popupInit()
+	particlesJsInit()
 })

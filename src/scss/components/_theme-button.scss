@@ -1,0 +1,39 @@
+.theme-toggle {
+	display: flex;
+	position: absolute;
+	width: calc(25px + 5 * (100vw - 554px) / 886);
+	top: 25px;
+	right: 25px;
+}
+
+.theme-icon {
+	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+	&.hidden {
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+	}
+	&:hover g path {
+		height: 0;
+
+		stroke: rgb(255, 118, 68);
+		transition: stroke 0.2s ease-in-out;
+	}
+}
+
+.theme-button-body--mobile {
+	display: flex;
+	justify-content: center;
+}
+
+.theme-button--mobile {
+	display: flex;
+	height: 25px;
+	width: 25px;
+}
+
+@media (max-width: 554px) {
+	.theme-toggle {
+		display: none;
+	}
+}

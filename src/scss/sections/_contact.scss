@@ -33,6 +33,7 @@
 
 		input {
 			padding: 20px 15px;
+			border-radius: 7px;
 			background-color: var(--formColor);
 			transition: background-color 0.2s ease-in-out;
 
@@ -49,6 +50,7 @@
 			margin-left: 15px;
 			padding: 0 25px;
 			height: 61.6px;
+			border-radius: 7px;
 			color: var(--secondaryColor);
 			background-color: var(--formColor);
 			transition: background-color 0.2s ease-in-out;
@@ -80,23 +82,31 @@
 			}
 		}
 	}
-}
 
-@media (max-width: 900px) {
-	.form {
-		flex-direction: column;
+	@media (max-width: 900px) {
+		.form {
+			flex-direction: column;
+
+			input {
+				padding-block: calc(14px + 6 * (100vw - 320px) / 580);
+			}
+
+			button {
+				padding-inline: calc(15px + 10 * (100vw - 320px) / 580);
+				height: calc(51.6px + 10 * (100vw - 320px) / 580);
+			}
+		}
+
+		.form-inner {
+			margin-bottom: 30px;
+			flex-direction: column;
+			width: 400px;
+		}
 	}
-
-	.form-inner {
-		margin-bottom: 30px;
-		flex-direction: column;
-		width: 400px;
-	}
-}
-
-@media (max-width: 450px) {
-	.form,
-	.form-inner {
-		width: 100%;
+	@media (max-width: 450px) {
+		.form,
+		.form-inner {
+			width: 100%;
+		}
 	}
 }

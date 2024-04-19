@@ -16,33 +16,80 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
+			<header id="header" class="header">
 				<div class="container">
 					<nav class="nav">
 						<ul class="nav-list">
-							<li><a id="smoothScroll" href="#contact">Контакты</a></li>
-							<li><a id="smoothScroll" href="#about">О нас</a></li>
+							<li><a id="smooth-scroll" href="#contact">Контакты</a></li>
+							<li><a id="smooth-scroll" href="#about">О нас</a></li>
 							<li class="logo">
-								<a id="smoothScroll" href="#home">CloudsSystems</a>
+								<a id="smooth-scroll" href="#home">CloudsSystems</a>
 							</li>
 							<li>
-								<a id="smoothScroll" href="#completedProjects">Проекты</a>
+								<a id="smooth-scroll" href="#completed-projects">Проекты</a>
 							</li>
-							<li><a id="smoothScroll" href="#solutions">Решения</a></li>
+							<li><a id="smooth-scroll" href="#solutions">Решения</a></li>
 						</ul>
 					</nav>
-					<button id="themeToggle" class="themeToggle">
-						<img id="themeIcon" src="./images/dark-theme-icon.svg" alt="" />
+					<button id="theme-button" class="theme-toggle">
+						<svg
+							id="black-theme-icon"
+							class="theme-icon"
+							viewBox="0 0 24.00 24.00"
+							fill="none"
+							stroke="#fff"
+							transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke="#cccccc"
+								stroke-width="0.192"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+									stroke="#fff"
+									stroke-width="1.704"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</g>
+						</svg>
+						<svg
+							id="light-theme-icon"
+							class="theme-icon hidden"
+							viewBox="0 0 24 24"
+							fill="none"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</g>
+						</svg>
 					</button>
-					<a id="smoothScroll" class="logo-mobile" href="#home"
+					<a id="smooth-scroll" class="logo-mobile" href="#home"
 						>CloudsSystems</a
 					>
-					<div id="handleMenu" class="menu-burger">
+					<div id="menu-burger" class="menu-burger">
 						<svg
-							class="ham hamRotate ham1"
+							class="ham ham-rotate ham1"
 							viewBox="0 0 100 100"
 							width="40"
-							id="menuIcon"
+							id="menu-icon"
 						>
 							<path
 								class="line top"
@@ -55,20 +102,70 @@
 							/>
 						</svg>
 					</div>
-					<nav id="menu" class="nav-mobile">
-						<button id="themeToggleMobile" class="themeToggle-mobile">
-							<img
-								id="themeIconMobile"
-								src="./images/dark-theme-icon.svg"
-								alt=""
-							/>
-						</button>
-						<ul class="nav-list">
-							<li><a id="navLink" href="#about">О нас</a></li>
-							<li><a id="navLink" href="#completedProjects">Проекты</a></li>
-							<li><a id="navLink" href="#solutions">Решения</a></li>
-							<li><a id="navLink" href="#contact">Контакты</a></li>
-						</ul>
+					<nav id="nav" class="nav-mobile">
+						<div class="nav-mobile-body">
+							<ul class="nav-list">
+								<li><a id="nav-link" href="#about">О нас</a></li>
+								<li><a id="nav-link" href="#completed-projects">Проекты</a></li>
+								<li><a id="nav-link" href="#solutions">Решения</a></li>
+								<li><a id="nav-link" href="#contact">Контакты</a></li>
+								<li class="theme-button-body--mobile">
+									<button
+										id="theme-button--mobile"
+										class="theme-button--mobile"
+									>
+										<svg
+											id="black-theme-icon--mobile"
+											class="theme-icon"
+											viewBox="0 0 24.00 24.00"
+											fill="none"
+											stroke="#fff"
+											transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke="#cccccc"
+												stroke-width="0.192"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+													stroke="#fff"
+													stroke-width="1.704"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												></path>
+											</g>
+										</svg>
+										<svg
+											id="light-theme-icon--mobile"
+											class="theme-icon hidden"
+											viewBox="0 0 24 24"
+											fill="none"
+										>
+											<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+											<g
+												id="SVGRepo_tracerCarrier"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></g>
+											<g id="SVGRepo_iconCarrier">
+												<path
+													d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+													stroke="#fff"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												></path>
+											</g>
+										</svg>
+									</button>
+								</li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</header>
@@ -212,39 +309,39 @@
 						</p>
 					</div>
 				</section>
-				<section id="keySkills" class="key-skills">
+				<section id="key-skills" class="key-skills">
 					<div class="container">
 						<h2 class="title animate-on-scroll">Ключевые навыки</h2>
-						<ul class="key-skills__list animate-on-scroll">
-							<li class="key-skills__item">
+						<ul class="key-skills__list">
+							<li class="key-skills__item animate-on-scroll">
 								<h3><b>Интеграция с внешними системами по API</b></h3>
 								<p>
 									Владение навыками интеграции различных систем через API,
 									включая RESTful API и другие протоколы.
 								</p>
 							</li>
-							<li class="key-skills__item">
+							<li class="key-skills__item animate-on-scroll">
 								<h3><b>Развертывание DataLake</b></h3>
 								<p>
 									Опыт настройки и развёртывания DataLake с использованием Minio
 									для хранения объектов и Kafka для потоковой обработки данных.
 								</p>
 							</li>
-							<li class="key-skills__item">
+							<li class="key-skills__item animate-on-scroll">
 								<h3><b>Развертывание DWH на основе MPP СУБД</b></h3>
 								<p>
 									Знания и опыт работы с параллельно-обрабатываемыми базами
 									данных для создания хранилищ данных.
 								</p>
 							</li>
-							<li class="key-skills__item">
+							<li class="key-skills__item animate-on-scroll">
 								<h3><b>Разработка предиктивных ML моделей</b></h3>
 								<p>
 									Опыт создания и применения моделей машинного обучения для
 									предсказательного анализа данных.
 								</p>
 							</li>
-							<li class="key-skills__item">
+							<li class="key-skills__item animate-on-scroll">
 								<h3>
 									<b>Разработка моделей классификации картинок и текста</b>
 								</h3>
@@ -254,7 +351,7 @@
 									других инструментов.
 								</p>
 							</li>
-							<li class="key-skills__item">
+							<li class="key-skills__item animate-on-scroll">
 								<h3><b>Разработка ETL процессов на Airflow и MSA</b></h3>
 								<p>
 									Навыки разработки процессов извлечения, преобразования и
@@ -365,24 +462,24 @@
 								</p>
 							</li>
 						</ul>
-						<button id="showMoreButton" class="button animate-on-scroll">
+						<button id="show-more-button" class="button animate-on-scroll">
 							Показать еще
 						</button>
 					</div>
 				</section>
 
-				<section id="completedProjects" class="completed-projects">
+				<section id="completed-projects" class="completed-projects">
 					<div class="container">
 						<h2 class="title animate-on-scroll">Выполненные проекты</h2>
-						<div class="projects animate-on-scroll">
-							<div class="project">
+						<ul class="projects">
+							<li class="project animate-on-scroll">
 								<p><b>Проект:</b> Разработка и внедрение СКУД систем</p>
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: MicroPython, PHP, Zabbix, MySQL</p>
-							</div>
+							</li>
 
-							<div class="project">
+							<li class="project animate-on-scroll">
 								<p>
 									<b>Проект:</b> Разработка DWH и ETL процессов для построения
 									PowerBI дашбордов
@@ -390,9 +487,9 @@
 								<p><b>Отрасль:</b> IT Сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Greenplum, PostgreSQL, K8s, Airflow, Python</p>
-							</div>
+							</li>
 
-							<div class="project">
+							<li class="project animate-on-scroll">
 								<p>
 									<b>Проект:</b> Разработка DWH и ETL процессов для построения
 									PowerBI дашбордов
@@ -400,9 +497,9 @@
 								<p><b>Отрасль:</b> Косметология</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Greenplum, PostgreSQL, K8s, Airflow, Python, 1C</p>
-							</div>
+							</li>
 
-							<div class="project">
+							<li class="project animate-on-scroll">
 								<p>
 									<b>Проект:</b> Разработка DWH и ETL процессов для построения
 									PowerBI дашбордов
@@ -412,16 +509,16 @@
 								<p>
 									Stack: Greenplum, PostgreSQL, K8s, Airflow, Python, 1C, MSSQL
 								</p>
-							</div>
+							</li>
 
-							<div class="project">
+							<li class="project animate-on-scroll">
 								<p><b>Проект:</b> Перенос CRM системы на микросервисы</p>
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: MSSQL, K8s, Python, Docker, ArgoCD, Kafka, Minio</p>
-							</div>
+							</li>
 
-							<div class="project">
+							<li class="project animate-on-scroll">
 								<p><b>Проект:</b> Внедрение DataLake</p>
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
@@ -429,9 +526,9 @@
 									Stack: MSSQL, K8s, Python, Docker, ArgoCD, Kafka, Minio,
 									Airflow, Spark
 								</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Внедрение системы VDI для работы удаленных
 									пользователей
@@ -439,9 +536,9 @@
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Vmware Horizon, ESXI</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Внедрение мониторинга инфраструктуры и
 									приложений
@@ -449,16 +546,16 @@
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Zabbix, Grafana, ELK, Observium, Jaeger</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p><b>Проект:</b> Реализация интеграций с внешними системами</p>
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Python, Airflow, K8s, ArgoCD</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализация речевой аналитики и классификация
 									звонков
@@ -469,9 +566,9 @@
 									Stack: Python, Whisper, ChatGPT, NVIDIA Chat With RTX,
 									Weaviate, K8s, Kafka
 								</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализация интеграций с WhatsApp и разработка
 									официального API
@@ -479,9 +576,9 @@
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: GoLang, K8s, Kafka, Minio</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализация предиктивной модели для оптимизации
 									складских остатков
@@ -491,18 +588,18 @@
 								<p>
 									Stack: Python, K8s, Kafka, Minio, Spark, TensorFlow, Pandas
 								</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализации классификации картинок из ТГ бота
 								</p>
 								<p><b>Отрасль:</b> Строительный сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Python, Minio, TensorFlow, MLOps, Kafka</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализация аналитики по ценным бумагам на
 									фондовом рынке
@@ -510,9 +607,9 @@
 								<p><b>Отрасль:</b> Банковский Сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Python, Minio, TensorFlow, MLOps, FastAPI, Redis</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Реализация системы для AB - тестирования и
 									проведение AB - тестирования
@@ -520,9 +617,9 @@
 								<p><b>Отрасль:</b> Банковский Сектор</p>
 								<p><b>Стек технологий:</b></p>
 								<p>Stack: Python, Minio, TensorFlow, MLOps, FastAPI, Redis</p>
-							</div>
+							</li>
 
-							<div class="project hidden">
+							<li class="project hidden">
 								<p>
 									<b>Проект:</b> Внедрение и поддержка инфраструктуры проекта
 								</p>
@@ -535,11 +632,11 @@
 									Stack: GitlabCI, ArgoCD, WatchTower, Docker, Docker-Compose,
 									K8s, Ansible, Terraform
 								</p>
-							</div>
-						</div>
-						<div class="buttonBody">
+							</li>
+						</ul>
+						<div class="button-body">
 							<button
-								id="showMoreProjectsButton"
+								id="show-more-projects-button"
 								class="button animate-on-scroll"
 							>
 								Показать еще
@@ -557,7 +654,7 @@
 						<form class="form animate-on-scroll" novalidate>
 							<div class="form-inner">
 								<input
-									id="contactFormEmail"
+									id="contact-form-email"
 									type="email"
 									name="email"
 									placeholder="Ваш Email"
@@ -565,7 +662,7 @@
 									required
 								/>
 								<input
-									id="contactFormUserName"
+									id="contact-form-username"
 									type="text"
 									name="name"
 									placeholder="Ваше имя"
@@ -573,19 +670,19 @@
 									required
 								/>
 								<input
-									id="contactFormPhone"
+									id="contact-form-phone"
 									type="tel"
 									name="telephone"
 									placeholder="Номер телефона"
 									required
 								/>
 							</div>
-							<button id="sendForm">Отправить</button>
+							<button id="send-form">Отправить</button>
 						</form>
 						<p class="privacy-policy animate-on-scroll">
 							Нажимая на кнопку "Отправить", Вы даете согласие на обработку
 							персональных данных и соглашаетесь
-							<a href="./privacy_policy.html" target="_blank"
+							<a href="./privacy-policy.html" target="_blank"
 								>c политикой конфиденциальности.</a
 							>
 						</p>
@@ -604,7 +701,7 @@
 							<a
 								href="https://t.me/marvellvs"
 								target="_blank"
-								class="socialItem"
+								class="social-item"
 								><img src="./images/social/telegram.png" alt=""
 							/></a>
 						</li>
@@ -612,7 +709,7 @@
 							<a
 								href="https://api.whatsapp.com/send/?phone=79649027367&text&type=phone_number&app_absent=0"
 								target="_blank"
-								class="socialItem"
+								class="social-item"
 								><img src="./images/social/whatsapp.png" alt=""
 							/></a>
 						</li>
@@ -621,8 +718,8 @@
 			</footer>
 			<div id="popup" class="popup-overlay">
 				<div class="popup">
-					<p id="popupMessage"></p>
-					<button id="closePopup" class="button">Закрыть</button>
+					<p id="popup-message"></p>
+					<button id="close-popup" class="button">Закрыть</button>
 				</div>
 			</div>
 		</div>

@@ -33,6 +33,13 @@
 			margin-bottom: 25px;
 			font-size: 18px;
 		}
+
+		.button {
+			margin-top: 0;
+			opacity: 1;
+			transition: background-color 0.2s ease-in-out,
+				border-color 0.2s ease-in-out;
+		}
 	}
 
 	&.hidden .popup {

@@ -12,14 +12,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 30px;
-		max-width: 1400px;
-		opacity: 0;
-
-		&.animate {
-			opacity: 1;
-			transition: opacity 0.4s ease-in-out;
-			transition-delay: 0.2s;
-		}
 	}
 
 	.key-skills__item {
@@ -29,14 +21,14 @@
 		border-radius: 10px;
 		border: var(--cardBorder);
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-			border-color 0.2s ease-in-out;
+			border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
-		@media (min-width: 768px) {
-			&:hover {
-				color: var(--primaryColor);
-				background-color: var(--secondaryColor);
-				border-color: var(--primaryColor);
-			}
+		&.animate-on-scroll {
+			opacity: 0;
+		}
+
+		&.animate-on-scroll.animate {
+			opacity: 1;
 		}
 
 		&.hidden {
@@ -47,17 +39,16 @@
 			margin-bottom: 5px;
 			font-size: 20px;
 		}
-	}
 
-	.button {
-		margin-top: 80px;
-		opacity: 0;
+		p {
+			font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+		}
 
-		&.animate {
-			opacity: 1;
-			transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-			transform: translateY(-15px);
-			transition-delay: 0.2s;
+		@media (min-width: 768px) {
+			&:hover {
+				background-color: var(--items-hover);
+				border-color: var(--primaryColor);
+			}
 		}
 	}
 }

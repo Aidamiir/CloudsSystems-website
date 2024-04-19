@@ -1,4 +1,4 @@
-export const particlesJs = () => {
+export const particlesJsInit = () => {
 	window.particlesJS('particles-js', {
 		particles: {
 			number: {

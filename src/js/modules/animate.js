@@ -1,9 +1,6 @@
-export const Animate = () => {
+export const animateInit = () => {
 	const elementsToAnimate = document.querySelectorAll('.animate-on-scroll')
-	const observer = new IntersectionObserver(handleIntersection, {
-		threshold: 0.5,
-	})
-	function handleIntersection(entries, observer) {
+	const handleIntersection = (entries, observer) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('animate')
@@ -11,6 +8,9 @@ export const Animate = () => {
 			}
 		})
 	}
+	const observer = new IntersectionObserver(handleIntersection, {
+		threshold: 0.5,
+	})
 	elementsToAnimate.forEach((element) => {
 		observer.observe(element)
 	})
