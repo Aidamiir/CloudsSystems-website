@@ -1,6 +1,7 @@
 import '../scss/style.scss'
 import { animateInit } from './modules/animate'
 import { contactFormInit } from './modules/form'
+import { headerPaddings } from './modules/header-paddings'
 import { menuInit } from './modules/menu'
 import { particlesJsInit } from './modules/particles-js-config'
 import { popupInit } from './modules/popup'
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	showMoreInit()
 	popupInit()
 	particlesJsInit()
+	headerPaddings()
 })

@@ -1,13 +1,17 @@
-.theme-toggle {
-	display: flex;
+.theme-button {
 	position: absolute;
 	width: calc(25px + 5 * (100vw - 554px) / 886);
 	top: 25px;
 	right: 25px;
+	transition: top 0.3s ease-in-out;
 }
 
 .theme-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
 	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
 	&.hidden {
 		opacity: 0;
 		visibility: hidden;
@@ -28,12 +32,13 @@
 
 .theme-button--mobile {
 	display: flex;
+	position: relative;
 	height: 25px;
 	width: 25px;
 }
 
 @media (max-width: 554px) {
-	.theme-toggle {
+	.theme-button {
 		display: none;
 	}
 }

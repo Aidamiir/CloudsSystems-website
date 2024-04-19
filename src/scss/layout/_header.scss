@@ -1,11 +1,16 @@
 .header {
-	padding: 25px 0;
+	padding-block: 25px;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(3px);
+
+	@media (min-width: 554px) {
+		transition: padding-block 0.3s ease-in-out;
+	}
 
 	.container {
+		max-height: 43px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
