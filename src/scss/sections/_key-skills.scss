@@ -21,7 +21,7 @@
 		border-radius: 10px;
 		border: var(--cardBorder);
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-			border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+			border-color 0.2s ease-in-out, opacity 0.4s ease-in-out;
 
 		&.animate-on-scroll {
 			opacity: 0;
